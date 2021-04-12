@@ -10,29 +10,33 @@
         }
     </style>
 <script>
+    alert('Welcome in Shiyyab resturant.');
     let Customer = prompt("what's your name sir ?");
-    console.log(Customer);
+        console.log(Customer);
 
-    let TimeCome = prompt("when are you need to go ?");
-    console.log(TimeCome);
+        let TimeCome = prompt("when are you need to go ?");
+       console.log(TimeCome);
 
-    let Howmany = prompt("How many person you come with you ?");
-    console.log(Howmany);
+       let Howmany = prompt("How many person you come with you ?");
+       console.log(Howmany);
 
-    let CustomerFavFood = prompt("What is you'r Type of meet they are love ?");
-    console.log(CustomerFavFood);
+       let CustomerFavFood = prompt("What is you'r Type of meet they are love ?");
+       console.log(CustomerFavFood);
 
-    alert("Hello " + Customer + " In Shiyyab Resturant\n" + "You are comming on " + TimeCome + "\nYou are : " + Howmany + " Person\n"
-    + "You love :" + CustomerFavFood + " Food\n" )
-    let tablenumber = Math.floor(Math.random() * 10) + 1;
+       
+       let tablenumber = Math.floor(Math.random() * 10) + 1;
 
+       function order(){
+        alert("Hello " + Customer + " In Shiyyab Resturant\n" + "You are comming on " + TimeCome + "\nYou are : " + Howmany + " Person\n"
+       + "You love :" + CustomerFavFood + " Food\n" )
+        }
 </script>
     <title>Lab: 01b - Getting Up and Running!</title>
 </head>
 <body>
     <header></header>
     <main>
-        <h1>Class 1 Lab</h1>
+        <h1>Shiyyab Resturant</h1>
         <p style="background-color: sandybrown;">Meat type</p>
         <ul class="List">
             <li>Steak</li>
@@ -41,11 +45,13 @@
             <li>Grilled</li>
         </ul>
 
+        <p>Do you need Check your selected and answering item ? <input type="submit" value="Select" onclick="order()"></p>
+
         <h2>Customer Selector:</h2>
         <p style="background-color: red; width: 33%;"><script>document.write("Customer Name is: "+Customer);</script></p>
         <p style="background-color: green; width: 33%;"><script>document.write("They are comming at : "+TimeCome);</script></p>
         <p style="background-color: yellow; width: 33%;"><script>document.write("The People number : "+Howmany);</script></p>
-        <p style="background-color: blue; width: 33%;"><script>document.write("The Customer favorite food : "+CustomerFavFood);</script></p>
+        <p style="background-color: blue; width: 33%;"><script>document.write("The Customer favorite food : " + CustomerFavFood);</script></p>
         <p style="background-color: darkmagenta; width: 33%;"> <script>document.write("The Table is : " + tablenumber);</script></p>
     </main>
     <footer></footer>
